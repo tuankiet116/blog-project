@@ -1,20 +1,23 @@
 <template>
-    <nav class="bg-header-navbar">
+    <nav class="bg-header-navbar shadow-lg">
         <div class="container-lg d-flex .flex-shrink-1 align-items-center 
-                justify-content-between mx-auto px-md-4 h-100">
-            <nuxt-link to="/" class="d-flex align-items-center ml-md-0 ml-2 h-100">
-                <img src="../assets/images/howto.png" />
+                justify-content-between mx-auto h-100">
+            <nuxt-link to="/" class="d-flex align-items-center ml-md-0 ms-2 ms-sm-0">
+                <h1 class="text-dark">
+                    <span class="fs-2">HowTo </span>
+                    <br />
+                    <span class="fs-4">do anything</span>
+                </h1>
             </nuxt-link>
-            <div class="h-100 col-4">
+            <div class="h-100 col-md-3 col-sm-2 d-none d-md-block">
                 <div class="row h-100 align-items-center">
                     <div class="col-12 mx-auto">
                         <div class="input-group">
-                            <input class="form-control border rounded-pill h-80" type="search" value=""
-                                id="example-search-input" />
-                            <span class="input-group-append">
-                                <button
-                                    class="btn btn-outline-secondary bg-white border-bottom-0 border rounded-pill ms-n5 btn-search"
-                                    type="button">
+                            <input class="form-control border rounded-pill h-80 border border-success" type="search"
+                                value="" id="example-search-input" />
+                            <span class="input-group-append ms-2">
+                                <button class="btn btn-outline-secondary bg-white border-bottom-0 border rounded-pill ms-n5 btn-search
+                                    border border-success" type="button">
                                     <font-awesome-icon icon="fa-solid fa-magnifying-glass" />
                                 </button>
                             </span>
@@ -72,7 +75,7 @@
 const runtimeConfig = useRuntimeConfig();
 const links = ref([
     {
-        name: "Home",
+        name: "Blog",
         to: "/"
     },
     {
